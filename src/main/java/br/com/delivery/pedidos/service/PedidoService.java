@@ -9,11 +9,19 @@ import br.com.delivery.pedidos.model.Pedido;
 import br.com.delivery.pedidos.model.StatusPedido;
 import br.com.delivery.pedidos.repository.CupomRepository;
 import br.com.delivery.pedidos.repository.PedidoRepository;
+import br.com.delivery.pedidos.state.PedidoState;
+import br.com.delivery.pedidos.strategy.DescontoFactory;
+import br.com.delivery.pedidos.strategy.DescontoStrategy;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
+@Service
+@RequiredArgsConstructor
 public class PedidoService {
     private final PedidoRepository pedidoRepository;
     private final CupomRepository cupomRepository;

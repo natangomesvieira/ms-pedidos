@@ -4,6 +4,8 @@ import br.com.delivery.pedidos.model.TipoDesconto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.Map;
+
 @Component
 @RequiredArgsConstructor
 public class DescontoFactory {

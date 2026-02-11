@@ -1,6 +1,7 @@
 package br.com.delivery.pedidos.state.impl;
 
 import br.com.delivery.pedidos.dto.RelatorioRequestDTO;
+import br.com.delivery.pedidos.integration.RelatorioClient;
 import br.com.delivery.pedidos.model.Pedido;
 import br.com.delivery.pedidos.state.PedidoState;
 import lombok.RequiredArgsConstructor;
