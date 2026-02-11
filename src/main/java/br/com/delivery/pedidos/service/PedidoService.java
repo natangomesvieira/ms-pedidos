@@ -2,10 +2,13 @@ package br.com.delivery.pedidos.service;
 
 import br.com.delivery.pedidos.dto.PedidoRequestDTO;
 import br.com.delivery.pedidos.dto.ProdutoDTO;
+import br.com.delivery.pedidos.integration.CatalogoClient;
 import br.com.delivery.pedidos.model.Cupom;
 import br.com.delivery.pedidos.model.ItemPedido;
 import br.com.delivery.pedidos.model.Pedido;
 import br.com.delivery.pedidos.model.StatusPedido;
+import br.com.delivery.pedidos.repository.CupomRepository;
+import br.com.delivery.pedidos.repository.PedidoRepository;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
