@@ -13,22 +13,22 @@ public class CatalogoClientMock implements CatalogoClient {
     @Override
     public ProdutoDTO buscarProdutoPorId(Long id) {
         ProdutoDTO dto = new ProdutoDTO();
-        dto.setId(id);
+        dto.setIdProduto(id);
 
         return switch (id.intValue()) {
             case 1 -> {
-                dto.setNome("Pizza de Calabresa");
-                dto.setPreco(new BigDecimal("45.00"));
+                dto.setNomeProduto("Pizza de Calabresa");
+                dto.setPrecoProduto(new BigDecimal("45.00"));
                 yield dto;
             }
             case 2 -> {
-                dto.setNome("Coca-Cola 2L");
-                dto.setPreco(new BigDecimal("10.00"));
+                dto.setNomeProduto("Coca-Cola 2L");
+                dto.setPrecoProduto(new BigDecimal("10.00"));
                 yield dto;
             }
             default -> {
-                dto.setNome("Produto Genérico");
-                dto.setPreco(new BigDecimal("15.00"));
+                dto.setNomeProduto("Produto Genérico");
+                dto.setPrecoProduto(new BigDecimal("15.00"));
                 yield dto;
             }
         };

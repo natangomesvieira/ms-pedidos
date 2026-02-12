@@ -71,15 +71,15 @@ public class PedidoService {
             ProdutoDTO produto = catalogoClient.buscarProdutoPorId(itemSolicitado.getIdProduto());
 
             ItemPedido item = new ItemPedido();
-            item.setIdProduto(produto.getId());
-            item.setNomeProduto(produto.getNome());
-            item.setValorUnidade(produto.getPreco());
+            item.setIdProduto(produto.getIdProduto());
+            item.setNomeProduto(produto.getNomeProduto());
+            item.setValorUnidade(produto.getPrecoProduto());
             item.setQuantidade(itemSolicitado.getQuantidade());
             item.setObservacao(itemSolicitado.getObservacao());
 
             pedido.getItens().add(item);
 
-            total = total.add(produto.getPreco().multiply(new BigDecimal(itemSolicitado.getQuantidade())));
+            total = total.add(produto.getPrecoProduto().multiply(new BigDecimal(itemSolicitado.getQuantidade())));
         }
         return total;
     }

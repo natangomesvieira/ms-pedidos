@@ -6,10 +6,9 @@ import java.math.BigDecimal;
 
 @Data
 public class ProdutoDTO {
-    private Long id;
-    private String nome;
-    private BigDecimal preco;
-    private String categoria;
-    private String descricao;
+    private Long idProduto;
+    private String nomeProduto;
+    private BigDecimal precoProduto;
+    private String descricaoProduto;
     private Boolean ativo;
 }
