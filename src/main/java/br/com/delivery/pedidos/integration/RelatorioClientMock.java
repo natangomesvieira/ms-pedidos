@@ -1,7 +1,6 @@
-package br.com.delivery.pedidos.integration.impl;
+package br.com.delivery.pedidos.integration;
 
 import br.com.delivery.pedidos.dto.RelatorioRequestDTO;
-import br.com.delivery.pedidos.integration.RelatorioClient;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package br.com.delivery.pedidos.model;
+package br.com.delivery.pedidos.enums;
 
 public enum StatusPedido {
     AGUARDANDO_PAGAMENTO,

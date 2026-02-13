@@ -1,6 +1,6 @@
 package br.com.delivery.pedidos.dto;
 
-import br.com.delivery.pedidos.model.StatusPedido;
+import br.com.delivery.pedidos.enums.StatusPedido;
 import lombok.Data;
 
 import java.math.BigDecimal;

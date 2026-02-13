@@ -1,6 +1,7 @@
-package br.com.delivery.pedidos.strategy;
+package br.com.delivery.pedidos.strategy.factory;
 
-import br.com.delivery.pedidos.model.TipoDesconto;
+import br.com.delivery.pedidos.enums.TipoDesconto;
+import br.com.delivery.pedidos.strategy.DescontoStrategy;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

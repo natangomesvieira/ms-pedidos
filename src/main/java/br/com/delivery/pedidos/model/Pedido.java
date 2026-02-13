@@ -1,5 +1,7 @@
 package br.com.delivery.pedidos.model;
 
+import br.com.delivery.pedidos.enums.FormaPagamento;
+import br.com.delivery.pedidos.enums.StatusPedido;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -21,7 +23,7 @@ public class Pedido {
     private String enderecoCliente;
 
     @Enumerated(EnumType.STRING)
-    private StatusPedido status = StatusPedido.AGUARDANDO_PAGAMENTO;
+    private StatusPedido status;
 
     private LocalDateTime dataPedido = LocalDateTime.now();
 

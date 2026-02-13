@@ -1,7 +1,6 @@
-package br.com.delivery.pedidos.integration.impl;
+package br.com.delivery.pedidos.integration;
 
 import br.com.delivery.pedidos.dto.ProdutoDTO;
-import br.com.delivery.pedidos.integration.CatalogoClient;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import java.math.BigDecimal;

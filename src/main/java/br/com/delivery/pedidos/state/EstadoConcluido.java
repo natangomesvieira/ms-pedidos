@@ -1,9 +1,8 @@
-package br.com.delivery.pedidos.state.impl;
+package br.com.delivery.pedidos.state;
 
 import br.com.delivery.pedidos.dto.RelatorioRequestDTO;
 import br.com.delivery.pedidos.integration.RelatorioClient;
 import br.com.delivery.pedidos.model.Pedido;
-import br.com.delivery.pedidos.state.PedidoState;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

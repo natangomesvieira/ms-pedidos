@@ -1,7 +1,6 @@
-package br.com.delivery.pedidos.integration.impl;
+package br.com.delivery.pedidos.integration;
 
 import br.com.delivery.pedidos.dto.RelatorioRequestDTO;
-import br.com.delivery.pedidos.integration.RelatorioClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;

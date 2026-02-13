@@ -6,11 +6,11 @@ import br.com.delivery.pedidos.integration.CatalogoClient;
 import br.com.delivery.pedidos.model.Cupom;
 import br.com.delivery.pedidos.model.ItemPedido;
 import br.com.delivery.pedidos.model.Pedido;
-import br.com.delivery.pedidos.model.StatusPedido;
+import br.com.delivery.pedidos.enums.StatusPedido;
 import br.com.delivery.pedidos.repository.CupomRepository;
 import br.com.delivery.pedidos.repository.PedidoRepository;
 import br.com.delivery.pedidos.state.PedidoState;
-import br.com.delivery.pedidos.strategy.DescontoFactory;
+import br.com.delivery.pedidos.strategy.factory.DescontoFactory;
 import br.com.delivery.pedidos.strategy.DescontoStrategy;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -29,6 +29,9 @@ public class PedidoService {
     private final CatalogoClient catalogoClient;
     private final Map<String, PedidoState> estados;
 
+    public List<Pedido> listarPedidos() {
+        return pedidoRepository.findAll();
+    }
     public Pedido criarPedido(PedidoRequestDTO request) {
         Pedido pedido = new Pedido();
         pedido.setNomeCliente(request.getNomeCliente());

@@ -1,7 +1,6 @@
-package br.com.delivery.pedidos.state.impl;
+package br.com.delivery.pedidos.state;
 
 import br.com.delivery.pedidos.model.Pedido;
-import br.com.delivery.pedidos.state.PedidoState;
 import org.springframework.stereotype.Component;
 
 @Component("EM_PREPARO")
