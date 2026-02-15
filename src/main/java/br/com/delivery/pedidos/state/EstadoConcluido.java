@@ -17,6 +17,7 @@ public class EstadoConcluido implements PedidoState {
         System.out.println("--- Pedido CONCLUÍDO. Iniciando integrações... ---");
 
         RelatorioRequestDTO dto = new RelatorioRequestDTO();
+        dto.setId(pedido.getId());
         dto.setDataPedido(pedido.getDataPedido());
         dto.setValorPedido(pedido.getTotalComDesconto());
         dto.setStatus(pedido.getStatus());

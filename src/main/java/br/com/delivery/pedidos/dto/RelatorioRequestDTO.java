@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 
 @Data
 public class RelatorioRequestDTO {
+    private Long id;
     private LocalDateTime dataPedido;
     private BigDecimal valorPedido;
     private StatusPedido status;
