@@ -11,6 +11,6 @@ public class RelatorioClientMock implements RelatorioClient {
     @Override
     public void enviarParaRelatorio(RelatorioRequestDTO pedido) {
         System.out.println("--- [INTEGRAÇÃO] Enviando pedido " + pedido.getStatus() + " para Relatórios ---");
-        System.out.println("Payload: Valor Total R$ " + pedido.getValorPedido());
+        System.out.println("Payload: Valor Total R$ " + pedido.getTotalComDesconto());
     }
 }

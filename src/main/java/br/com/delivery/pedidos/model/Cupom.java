@@ -9,13 +9,14 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
+@Table(name = "tb_cupom")
 public class Cupom {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true, nullable = false, length = 50)
     private String codigo;
 
     @Column(nullable = false)
