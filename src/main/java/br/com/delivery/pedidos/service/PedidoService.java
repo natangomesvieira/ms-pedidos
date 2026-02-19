@@ -36,6 +36,8 @@ public class PedidoService {
         Pedido pedido = new Pedido();
         pedido.setNomeCliente(request.getNomeCliente());
         pedido.setStatus(StatusPedido.AGUARDANDO_PAGAMENTO);
+        pedido.setEnderecoCliente(request.getEnderecoCliente());
+        pedido.setFormaPagamento(request.getFormaPagamento());
 
         BigDecimal subtotal = processarItens(request.getItens(), pedido);
         pedido.setValorTotal(subtotal);

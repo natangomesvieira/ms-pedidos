@@ -1,5 +1,6 @@
 package br.com.delivery.pedidos.dto;
 
+import br.com.delivery.pedidos.enums.FormaPagamento;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import java.util.List;
@@ -33,6 +34,10 @@ public class PedidoRequestDTO {
     @Schema(description = "Código do cupom de desconto (opcional)", example = "NATAL10")
     @JsonProperty(required = true)
     private String cupom;
+
+    @Schema(description = "Forma de pagamento", example = "PIX")
+    @JsonProperty(required = true)
+    private FormaPagamento formaPagamento;
 
     @Data
     @Schema(description = "Detalhes de um item específico do pedido")
